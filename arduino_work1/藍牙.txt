@@ -1,0 +1,29 @@
+
+LOLI05:
+
+VERSION:3.0-20170601
+NAME:LOLI_HC05
+UART:9600,0,0
+ADDR:98D3:71:F5C15F
+CLASS:1f00 (?)
+PSWD:1234
+BIND:98D3:71:F5D281
+
+SHOTA05:
+VERSION:3.0-20170601
+NAME:SHOTA_HC05
+UART:9600,0,0
+ADDR:98D3:71:F5D281
+CLASS:1f00
+PIN:1234
+BIND:98D3:71:F5C15F
+
+指令集:
+AT+ADDR? 為地址
+AT+ORGL  為回覆到原廠狀態
+AT+ROLE= 為設定主從角色 0為slave 1為master 2為slave-loop
+AT+PSWD? 查詢密碼(但是不能改密碼?)
+AT+CMODE 更改連接模式 0為指定地址連接 1為任意連接 2為slave-loop
+
+
+程式中為每讀到一個字元就傳入藍牙模組 而非一次傳入一個字串

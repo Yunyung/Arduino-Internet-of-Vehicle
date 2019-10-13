@@ -1,0 +1,8 @@
+// T: LW
+// B: LS
+// G: LSTOP
+// Y: RW
+// H: RS
+// N: RSTOP
+
+ÂX¥Rª©¥s°µsensor shiled v5.0
